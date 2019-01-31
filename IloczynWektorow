@@ -8,7 +8,9 @@ public class iloczynWektorow {
 
         int tab1[] = {1, 2, 3},
             tab2[] = {4, 5, 6};
-
+        
+        //wzór na iloczyn wektorów (a2*b3 - a3*b2) ; (a3*b1 - a1*b3) ; (a1*b2 - b2*a1)
+        
         firstResult = (tab1[1]*tab2[2]) - (tab1[2]*tab2[1]);
         secondResult = (tab1[2]*tab2[0]) - (tab1[0]*tab2[2]);
         thirdResult = (tab1[0]*tab2[1]) - (tab1[1]*tab2[0]);
