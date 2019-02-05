@@ -1,0 +1,23 @@
+public class fibonacciIteracja {
+
+    public static long fibonacci(int x){
+        
+        long first = 0;
+        long second = 1;
+        int i = 0;
+
+            while(i < x){
+                
+                long third = first;
+                first = second;
+                second = third + second;
+
+                i++;
+            }
+            return first;
+    }
+    public static void main(String[] args) {
+
+        System.out.println(fibonacci(50));
+    }
+}
