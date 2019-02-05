@@ -14,9 +14,10 @@ public class euler4 {
                 long n = multiply, reverse = 0;
 
                 while(n != 0){
-                    reverse = reverse * 10;
-                    reverse = reverse + n % 10;
-                    n = n / 10;
+                    reverse = reverse * 10; //przesuwa reverse o jedno zero do przodu
+                    reverse = reverse + n % 10; //dodaje do reverse resztę z dzielenia wymnażanej liczby
+                    n = n / 10; //dzieli wymnażaną liczbę przez 10 usuwając ostatni wyraz
+                    //pętla jest wykonywana dopóki n != 0
                 }
 
                 if(multiply == reverse){
