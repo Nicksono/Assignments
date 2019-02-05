@@ -1,0 +1,30 @@
+public class Complex {
+
+        public static void main (String[]args)
+        {
+            Complex operatory = new Complex();
+            int wynikMnozenia = operatory.mnozenie(5,5);
+            int wynikDzielenia = operatory.dzielenie(234,13);
+            int wynikOdejmowania = operatory.odejmowanie(100,34);
+
+            System.out.println(wynikMnozenia);
+            System.out.println(wynikDzielenia);
+            System.out.println(wynikOdejmowania);
+        }
+
+    }
+
+    class Complex {
+        int mnozenie(int m1, int m2)
+        {
+            return m1 * m2;
+        }
+        int dzielenie(int d1, int d2)
+        {
+            return d1 / d2;
+        }
+        int odejmowanie(int i1, int i2)
+        {
+            return i1 - i2;
+        }
+    }
